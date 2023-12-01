@@ -529,17 +529,21 @@ body {
   height: 40px;
   padding: 8px 16px;
   font-size: 12px;
-  line-height: 2; /* 200% */
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--WHITE, #fff);
   border-radius: 4px;
   border: 1px solid var(--WHITE, #fff);
+  background-color: transparent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
-
+.footer-field-email::placeholder {
+  color: var(--WHITE, #fff);
+}
 .form-footer-btn {
   display: flex;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
@@ -661,6 +665,9 @@ body {
 .feedback-form-wrapper {
   margin-bottom: 8px;
 }
+.feedback-form-wrapper-comment {
+  margin-bottom: 16px;
+}
 .feedback-form-input-wrapper {
   position: relative;
 }
@@ -676,7 +683,6 @@ body {
   border-color: #4d5ae5;
 }
 .feedback-form-checkbox {
-  margin-top: 16px;
   margin-bottom: 24px;
 }
 .feedback-form-input:focus + .feedback-form-input-icon {
@@ -726,7 +732,7 @@ body {
   background-color: #404bbf;
   border-color: none;
   border: none;
-  fill: #F4F4FD;
+  fill: #f4f4fd;
 }
 .feedback-form-checkbox-input:focus
   + .feedback-form-checkbox-label
